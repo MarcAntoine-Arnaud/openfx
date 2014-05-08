@@ -104,6 +104,7 @@ of the direct OFX objects and any library side only functions.
 #include <exception>
 #include <stdexcept>
 #include <sstream>
+#include <memory>
 
 #ifdef OFX_CLIENT_EXCEPTION_HEADER
 #include OFX_CLIENT_EXCEPTION_HEADER
