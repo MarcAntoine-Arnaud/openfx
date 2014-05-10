@@ -35,9 +35,10 @@ England
 */
 
 #include <string>
-#include <assert.h>
-#include <stdio.h>
-#include <stdarg.h>
+#include <cassert>
+#include <cstdio>
+#include <cstdarg>
+#include <cstdlib>
 
 /** @file This file contains the body of functions used for logging ofx problems etc...
 
