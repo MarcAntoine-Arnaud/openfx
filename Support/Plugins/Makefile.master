@@ -1,4 +1,7 @@
 BITS := 32
+ifeq ($(shell getconf LONG_BIT),64)
+  BITS := 64
+endif
 OS := $(shell uname -s)
 DEBUGFLAG ?= -g
 DEBUGNAME = debug
@@ -31,7 +34,7 @@ default: $(OBJECTPATH)/$(PLUGINNAME).ofx
     LINKFLAGS = -shared -Xlinker --version-script=$(PATHTOROOT)/include/linuxSymbols -lGL
     ARCH = Linux-x86
     BITSFLAG = -m32
-    ifeq ($(BITS), 64)
+    ifeq ($(shell getconf LONG_BIT),64)
       BITSFLAG = -m64
       ARCH = Linux-x86-64
       LINKFLAGS := $(LINKFLAGS) -m64
