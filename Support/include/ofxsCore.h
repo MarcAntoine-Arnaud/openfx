@@ -87,15 +87,15 @@ of the direct OFX objects and any library side only functions.
 #pragma warning( disable : 4290 )
 #endif
 
-#include "ofxCore.h"
-#include "ofxImageEffect.h"
-#include "ofxInteract.h"
-#include "ofxKeySyms.h"
-#include "ofxMemory.h"
-#include "ofxMessage.h"
-#include "ofxMultiThread.h"
-#include "ofxParam.h"
-#include "ofxProperty.h"
+#include <openfx/ofxCore.h>
+#include <openfx/ofxImageEffect.h>
+#include <openfx/ofxInteract.h>
+#include <openfx/ofxKeySyms.h>
+#include <openfx/ofxMemory.h>
+#include <openfx/ofxMessage.h>
+#include <openfx/ofxMultiThread.h>
+#include <openfx/ofxParam.h>
+#include <openfx/ofxProperty.h>
 
 #include <assert.h>
 #include <vector>
