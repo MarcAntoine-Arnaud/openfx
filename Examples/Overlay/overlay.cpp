@@ -49,9 +49,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <GL/gl.h>
 #endif
 #include <math.h>
-#include "ofxImageEffect.h"
-#include "ofxMemory.h"
-#include "ofxMultiThread.h"
+#include <openfx/ofxImageEffect.h>
+#include <openfx/ofxMemory.h>
+#include <openfx/ofxMultiThread.h>
 
 #include "../include/ofxUtilities.H" // example support utils
 

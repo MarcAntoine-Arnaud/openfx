@@ -40,10 +40,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <GL/gl.h>
 #endif
 
-#include "ofxImageEffect.h"
-#include "ofxMemory.h"
-#include "ofxMultiThread.h"
-#include "ofxOpenGLRender.h"
+#include <openfx/ofxImageEffect.h>
+#include <openfx/ofxMemory.h>
+#include <openfx/ofxMultiThread.h>
+#include <openfx/ofxOpenGLRender.h>
 
 #include "../include/ofxUtilities.H" // example support utils
 

@@ -40,10 +40,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     - basic image access and rendering
  */
 #include <string.h>
-#include "ofxImageEffect.h"
-#include "ofxMemory.h"
-#include "ofxMultiThread.h"
-#include "ofxPixels.h"
+#include <openfx/ofxImageEffect.h>
+#include <openfx/ofxMemory.h>
+#include <openfx/ofxMultiThread.h>
+#include <openfx/ofxPixels.h>
 
 // pointers to various bits of the host
 OfxHost               *gHost;

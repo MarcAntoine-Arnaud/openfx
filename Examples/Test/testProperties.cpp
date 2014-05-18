@@ -35,10 +35,10 @@ run it through a c beautifier or emacs auto formating, automagic indenting will 
 */
 #include <string> // stl strings
 #include <map> // stl maps
-#include "ofxImageEffect.h"
-#include "ofxMemory.h"
-#include "ofxMultiThread.h"
-#include "ofxMessage.h"
+#include <openfx/ofxImageEffect.h>
+#include <openfx/ofxMemory.h>
+#include <openfx/ofxMultiThread.h>
+#include <openfx/ofxMessage.h>
 
 #include "ofxLog.H"
 
