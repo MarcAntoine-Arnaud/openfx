@@ -7,4 +7,5 @@ Examples/*/*.bundle
 *.o
 *.ofx
 *.a
+*.dso
 *~
