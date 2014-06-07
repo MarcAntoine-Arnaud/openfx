@@ -266,6 +266,10 @@ namespace OFX {
       _clipProps.propSetString(kOfxImageEffectPropSupportedComponents, kOfxImageComponentRGBA, n);
       break;
 
+    case ePixelComponentRGB :
+      _clipProps.propSetString(kOfxImageEffectPropSupportedComponents, kOfxImageComponentRGB, n);
+      break;
+
     case ePixelComponentAlpha :
       _clipProps.propSetString(kOfxImageEffectPropSupportedComponents, kOfxImageComponentAlpha, n);
       break;

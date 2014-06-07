@@ -101,6 +101,7 @@ namespace OFX {
   /** @brief Enumerates the component types supported */
   enum PixelComponentEnum {ePixelComponentNone,
     ePixelComponentRGBA,
+    ePixelComponentRGB,
     ePixelComponentAlpha,
     ePixelComponentCustom ///< some non standard pixel type
   };
