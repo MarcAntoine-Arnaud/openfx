@@ -169,6 +169,9 @@ namespace OFX {
     if(str == kOfxImageComponentRGBA) {
       return ePixelComponentRGBA;
     }
+    if(str == kOfxImageComponentRGB) {
+      return ePixelComponentRGB;
+    }
     else if(str == kOfxImageComponentAlpha) {
       return ePixelComponentAlpha;
     }
@@ -530,6 +533,7 @@ namespace OFX {
     switch(_pixelComponents) 
     {
     case ePixelComponentRGBA  : _pixelBytes = 4; break;
+    case ePixelComponentRGB   : _pixelBytes = 3; break;
     case ePixelComponentAlpha : _pixelBytes = 1; break;
     case ePixelComponentCustom : _pixelBytes = 0; break;
     }
@@ -1186,6 +1190,9 @@ namespace OFX {
     {
     case ePixelComponentRGBA : 
       outArgs_.propSetString(propName.c_str(), kOfxImageComponentRGBA); 
+      break;
+    case ePixelComponentRGB :
+      outArgs_.propSetString(propName.c_str(), kOfxImageComponentRGB);
       break;
     case ePixelComponentAlpha : 
       outArgs_.propSetString(propName.c_str(), kOfxImageComponentAlpha); 
