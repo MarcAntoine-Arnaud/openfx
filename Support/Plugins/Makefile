@@ -1,4 +1,4 @@
-SUBDIRS = Basic Generator Retimer Transition Invert
+SUBDIRS = Basic Generator Retimer Transition Invert ColorMatrix
 
 default : 
 	@ echo making sub projects... $(SUBDIRS)
