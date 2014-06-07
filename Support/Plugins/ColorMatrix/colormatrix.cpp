@@ -63,7 +63,7 @@ public :
   ColorMatrixBase(OFX::ImageEffect &instance)
     : OFX::ImageProcessor(instance)
     , _srcImg(0)
-  {        
+  {
   }
 
   /** @brief set the src image */
@@ -95,7 +95,7 @@ public :
   }  
 };
 
-// template to do the RGBA processing
+// template to do the RGB/RGBA processing
 template <class Pixel, int nComponents, int max>
 class ImageColorMatrix : public ColorMatrixBase {
 public :
@@ -128,7 +128,7 @@ public :
         }
         else {
           // no src pixel here, be black and transparent
-          memset( dstPix ,0, nComponents);
+          memset(dstPix ,0, nComponents);
         }
 
         // increment the dst pixel
